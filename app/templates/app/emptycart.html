@@ -1,0 +1,56 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Buy Now{% endblock title %}
+{% block main-content %}
+    <title>Empty Cart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .empty-cart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .empty-cart img {
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+        .empty-cart h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+        .empty-cart p {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="empty-cart">
+        <img src="https://img.icons8.com/ios/452/empty-box.png" alt="Empty Cart">
+        <h1>Your Cart is Empty</h1>
+        <p>Looks like you haven't added anything to your cart yet.</p>
+        <a href="#" class="btn btn-primary">Continue Shopping</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% endblock main-content %}
